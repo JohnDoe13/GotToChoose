@@ -86,8 +86,7 @@ namespace GotToChoose
            //Selection #1
            Console.Clear();
             int youth_sum, senior_sum;
-            int youth = 20, senior = 64, adult;
-           int youths = 90, seniors = 75, adults = 120;
+            int youth = 80, seniors = 90, adults = 120;
         
             Console.WriteLine("Please specify age of your company i.e. ppl younger than 20 and seniors above 64.\n Youths 80 SEK, Seniors 90\n All others 120 SEK.");
             Console.WriteLine("To The Movies.");
@@ -102,7 +101,7 @@ namespace GotToChoose
             
             int crowd = youth_counting + senior_counting + adult_counting;
             Console.WriteLine("People going: " + crowd);
-            Console.WriteLine("Total amount: "+ ((youth_counting*youths)+(senior_counting*seniors)+(adult_counting*adults)));
+            Console.WriteLine("Total amount: "+ ((youth_counting*youth)+(senior_counting*seniors)+(adult_counting*adults)));
             Console.WriteLine("Type 0 (zero) to continue.");
 
 
