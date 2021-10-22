@@ -24,14 +24,24 @@ namespace GotToChoose
             
             //Kommentar
             {
+                //char bigY = (char)89;
+                //string outputY = bigY.ToString();
+                //Console.WriteLine(bigY);
+                //char smally = (char)121;
+                //string outputy = smally.ToString();
+                //Console.WriteLine(smally);
                 Console.WriteLine("Welcome to the Movies Inc.");
                 Console.WriteLine("Press Y(es) or N(o) to continue.");
                 string yesorno = Console.ReadLine();
-                if (yesorno=="Y" || yesorno=="y")
+                Console.WriteLine(yesorno);
+
+                if (yesorno == "Y") 
+
+
                 {
                     MainMenu();
                 }
-                else
+                    else if (yesorno=="n")
                 {
                     Environment.Exit(0);
                 }
